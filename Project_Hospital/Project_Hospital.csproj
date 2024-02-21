@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AA1E500-81D8-4049-BE71-44D366B5BF3F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Hospital</RootNamespace>
+    <AssemblyName>Project_Hospital</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnouncement.Designer.cs">
+      <DependentUpon>FrmAnouncement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAppointmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAppointmentList.Designer.cs">
+      <DependentUpon>FrmAppointmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorDetails.Designer.cs">
+      <DependentUpon>FrmDoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorInformationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorInformationEdit.Designer.cs">
+      <DependentUpon>FrmDoctorInformationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorLogin.Designer.cs">
+      <DependentUpon>FrmDoctorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorPanel.Designer.cs">
+      <DependentUpon>FrmDoctorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpertise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpertise.Designer.cs">
+      <DependentUpon>FrmExpertise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInformationEdit.Designer.cs">
+      <DependentUpon>FrmInformationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins.Designer.cs">
+      <DependentUpon>FrmLogins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientDetail.Designer.cs">
+      <DependentUpon>FrmPatientDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientEnter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientEnter.Designer.cs">
+      <DependentUpon>FrmPatientEnter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatientSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatientSignUp.Designer.cs">
+      <DependentUpon>FrmPatientSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecretaryLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecretaryLogin.Designer.cs">
+      <DependentUpon>FrmSecretaryLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecretaryDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryDetails.Designer.cs">
+      <DependentUpon>SecretaryDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlConnections.cs" />
+    <EmbeddedResource Include="FrmAnouncement.resx">
+      <DependentUpon>FrmAnouncement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAppointmentList.resx">
+      <DependentUpon>FrmAppointmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorDetails.resx">
+      <DependentUpon>FrmDoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorInformationEdit.resx">
+      <DependentUpon>FrmDoctorInformationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorLogin.resx">
+      <DependentUpon>FrmDoctorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorPanel.resx">
+      <DependentUpon>FrmDoctorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpertise.resx">
+      <DependentUpon>FrmExpertise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInformationEdit.resx">
+      <DependentUpon>FrmInformationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins.resx">
+      <DependentUpon>FrmLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientDetail.resx">
+      <DependentUpon>FrmPatientDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientEnter.resx">
+      <DependentUpon>FrmPatientEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatientSignUp.resx">
+      <DependentUpon>FrmPatientSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecretaryLogin.resx">
+      <DependentUpon>FrmSecretaryLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SecretaryDetails.resx">
+      <DependentUpon>SecretaryDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
